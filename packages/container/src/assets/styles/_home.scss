@@ -1,0 +1,30 @@
+.main_home {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    .main_home_menu {
+        pointer-events: all;
+        cursor: pointer;
+        width: 40%;
+
+        &:hover, &:active {
+            background: rgba($color: #000000, $alpha: .3);
+        }
+
+        img {
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .main_home {
+        height: 80vh;
+        flex-direction: column;
+        align-items: center;
+    }
+}

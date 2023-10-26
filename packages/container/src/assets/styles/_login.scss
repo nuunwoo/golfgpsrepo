@@ -1,0 +1,96 @@
+.login_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: '나눔스퀘어', 'NanumSquare', sans-serif;
+
+  .login_title_inner {
+    margin: 0 auto;
+    padding: 80px 0 0;
+    text-align: center;
+
+    h2 {
+      display: inline-block;
+      font-size: 37px;
+      font-weight: 300;
+    }
+
+    p,
+    span {
+      font-size: 22px;
+      font-weight: 300;
+    }
+
+    .smallline {
+      margin: 16px 0 20px 0;
+
+      img {
+        width: inherit;
+      }
+    }
+
+    h2,
+    p,
+    span {
+      cursor: text;
+    }
+  }
+}
+
+.login_contents {
+  // height: 100%;
+  display: flex;
+  align-items: center;
+
+  .login_contents_inner {
+    margin: auto;
+    padding: 60px 0 0px;
+    width: 520px;
+
+    .login_input {
+      padding: 0 60px;
+
+      input {
+        width: 100%;
+        padding: 0px 20px;
+        height: 60px;
+        border-bottom: 1px solid rgb(229, 229, 229);
+        margin-top: 10px;
+        font-size: 18px;
+        text-align: center;
+
+        &::placeholder {
+          font-size: 10;
+        }
+      }
+
+      input[type='text'],
+      input[type='password'] {
+        background-color: #fff;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border: 1px solid #d2d2d2;
+        font-size: inherit;
+        box-shadow: none;
+        font-size: 18px;
+      }
+    }
+
+    .login_btn {
+      width: calc(100% - 120px);
+      margin: 100px 60px 60px;
+
+      background: #f36c3b;
+      color: #fff;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 70px;
+      letter-spacing: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

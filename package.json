@@ -1,0 +1,17 @@
+{
+  "packageManager": "yarn@3.6.1",
+  "workspaces": [
+    "app/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/eslint": "^8",
+    "@yarnpkg/sdks": "^3.0.0-rc.48",
+    "eslint": "^8.44.0",
+    "eslint-config-react-app": "^7.0.1",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "build": "yarn workspace @app/auroracc vite build && yarn workspace @app/dogocc vite build && yarn workspace @app/jayucc vite build && yarn workspace @app/lehonetecc vite build && yarn workspace @app/monarchcc vite build && yarn workspace @app/songchoocc vite build"
+  }
+}

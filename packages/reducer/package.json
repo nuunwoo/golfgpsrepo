@@ -1,0 +1,17 @@
+{
+  "name": "@pkg/reducer",
+  "version": "0.0.0",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@pkg/types": "workspace:^",
+    "react-redux": "^8.1.1",
+    "redux": "^4.2.1"
+  },
+  "peerDependencies": {
+    "react-redux": "^8.1.1",
+    "redux": "^4.2.1"
+  }
+}
